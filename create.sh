@@ -32,6 +32,10 @@ sed -i '/setContentView/ a\
 TextView out = (TextView) findViewById(R.id.output);\
 out.setText("Initialized.");' $1.$(whoami)/src/$1/$(whoami)/${1}activity.java
 
+echo "Adding a run.sh for your project, so you don't have to leave your cozy project's directory."
+echo "(cd ..; ./run.sh $1.$(whoami))" > $1.$(whoami)/run.sh
+chmod +x $1.$(whoami)/run.sh
+
 target=$(android list targets | grep -A3 "id: $target or" | grep -v Platform | tr -d \\n)
 echo Project
 echo ... target: $target
