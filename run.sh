@@ -28,7 +28,7 @@ if [ $? -ne 0 ]; then
 	exit 1;
 fi;
 
-jarsigner -storepass 123123 bin/*-release-unsigned.apk mykey
+jarsigner -storepass 123123 -digestalg SHA1 bin/*-release-unsigned.apk mykey
 
 # Should zipalign happen here?
 
