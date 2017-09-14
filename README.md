@@ -6,7 +6,7 @@ Prerequisites: adb, about 500MB disk space and (obviously) GNU/Linux.
 
 ## TL;DR
 
-1. Download command line tools [here](https://developer.android.com/studio/index.html#linux-tools).
+1. Download command line tools [here](http://lgms.nl/files/android-sdk.tar.gz) (Google no longer hosts them, so I re-uploaded my version).
 
 2. Run `tools/android` and select what you need (details in step 5 and 6 below).
 
